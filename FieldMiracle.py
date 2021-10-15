@@ -9,5 +9,7 @@ def write_question(num):
             f.write(question + ';' + answer + '\n')
 
 
-
+def get_question():
+    with open('question.txt', 'r', encoding = 'utf-8') as f:
+        return answer, question
 
