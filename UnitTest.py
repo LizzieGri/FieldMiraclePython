@@ -10,7 +10,7 @@ class MyTestCase(unittest.TestCase):
     #     self.assertEqual(FieldMiracle.write_question(2), None)
 
     def test_get(self):
-        self.assertEqual(FieldMiracle.get_question(),"Самая длинная река в мире;амазонка")
+        self.assertEqual(FieldMiracle.get_question(), "амазонка")
 
 
 if __name__ == '__main__':
