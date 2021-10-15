@@ -3,4 +3,4 @@ def write_question(question, answer):
             f.write(question + ';' + answer + '\n')
     return question + ';' + answer
 
-
+ 
