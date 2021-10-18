@@ -28,4 +28,6 @@ def get_question():
 def output_question():
     answer, question = get_question()
     curent_view = []
-    return answer
+    for i in range(0, len(answer)):
+        curent_view.append('*')
+    return ''.join(curent_view)
