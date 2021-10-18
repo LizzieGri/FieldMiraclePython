@@ -36,10 +36,14 @@ def output_question():
 
 def answ(user):
     answer, question = get_question()
+    curent_view = []
+    for i in range(0, len(answer)):
+        curent_view.append('*')
     if user in answer:
-        curent_view = []
         for i in range(0, len(answer)):
-            curent_view.append('*')
-        return ''.join(curent_view)
+            if answer[i] == user:
+                curent_view[i]=user
     else:
         return answer
+
+    return ''.join(curent_view)
