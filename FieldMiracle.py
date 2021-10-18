@@ -23,5 +23,9 @@ def get_question():
             question = question_answer[0:i]
             answer = question_answer[i+1:len(question_answer)]
 
-    return answer
+    return answer, question
 
+def output_question():
+    answer, question = get_question()
+    curent_view = []
+    return answer
