@@ -39,6 +39,8 @@ def answ(user):
     curent_view = []
     for i in range(0, len(answer)):
         curent_view.append('*')
+    if user == answer:
+        return 'Вы правильно угадали слово!'
     if user in answer:
         for i in range(0, len(answer)):
             if answer[i] == user:
