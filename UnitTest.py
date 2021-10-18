@@ -12,8 +12,11 @@ class MyTestCase(unittest.TestCase):
     # def test_get(self):
     #     self.assertEqual(FieldMiracle.get_question(), ('амазонка', 'Самая длинная река в мире'))
 
-    def test_encryption(self):
-        self.assertEqual(FieldMiracle.output_question(),'********')
+    # def test_encryption(self):
+    #     self.assertEqual(FieldMiracle.output_question(),'********')
+
+    def test_answ(self):
+        self.assertEqual(FieldMiracle.answ('а'), 'а*а****а')
 
 
 if __name__ == '__main__':
